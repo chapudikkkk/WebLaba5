@@ -1,0 +1,91 @@
+.content {
+  width: 90%;
+  max-width: 1000px;
+  margin: 25px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+  color: #4b4b9b;
+  text-align: center;
+}
+
+.figure-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1 1 250px;
+  min-width: 0;
+  max-width: 350px;
+  border: 1px solid #b8b8e6;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+legend {
+  font-weight: bold;
+  color: #4b4b9b;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+input:focus {
+  outline: 2px solid #7777cc;
+  border-color: #7777cc;
+}
+
+.btn {
+  align-self: center;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  background: #5555aa;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #393981;
+}
+
+.results {
+  line-height: 1.7;
+}
+
+.results h3 {
+  color: #4b4b9b;
+}
+
+@media (max-width: 600px) {
+  .content {
+    width: 95%;
+    padding: 14px;
+  }
+
+  fieldset {
+    flex-basis: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

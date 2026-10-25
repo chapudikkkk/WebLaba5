@@ -1,0 +1,49 @@
+<section class="content">
+  <h2>Завдання</h2>
+
+  <p>
+    Базовий клас: Квадрат (поля: назва, сторона).
+    <br />
+    Метод: розрахунок площі квадрата. Нащадок: Прямокутник (поле: різниця між довжинами сторін). <br />
+    Зміни в нащадках: перевизначення методу розрахунку площі фігури.
+  </p>
+</section>
+
+<section class="content">
+  <form class="figure-form">
+    <fieldset>
+      <legend>Квадрат</legend>
+      <label for="name1">Назва фігури</label>
+      <input type="text" id="name1" placeholder="Наприклад, Квадрат" #name1 />
+      <label for="side1">Довжина сторони</label>
+      <input type="number" id="side1" min="0.01" step="any"  placeholder="Введіть сторону" #side1 />
+    </fieldset>
+    <fieldset>
+      <legend>Прямокутник</legend>
+      <label for="name2">Назва фігури</label>
+      <input type="text" id="name2" placeholder="Наприклад, Прямокутник" #name2 />
+      <label for="side2">Перша сторона</label>
+      <input type="number" id="side2" min="0.01" step="any" placeholder="Введіть сторону" #side2 />
+      <label for="diff">Різниця між сторонами</label>
+      <input type="number" id="diff" min="0" step="any" placeholder="Введіть різницю" #diff />
+    </fieldset>
+
+    <button type="button" class="btn" (click)="calcFigures(name1.value, side1.value, name2.value, side2.value, diff.value)">
+      Розрахунок
+    </button>
+  </form>
+<section class="content results">
+  <h2 class="gradient-text">Результати обрахунків</h2>
+
+  <div class="results-container">
+    <div class="result-card">
+      <h3 class="gradient-text">Квадрат</h3>
+      <h4>{{ square_show }}</h4>
+    </div>
+
+    <div class="result-card">
+      <h3 class="gradient-text">Прямокутник</h3>
+      <h4>{{ rectangle_show }}</h4>
+    </div>
+  </div>
+</section>
