@@ -1,2 +1,25 @@
 <app-header></app-header>
-<app-square></app-square>
+<nav class="profile-menu">
+  <a
+    routerLink="/"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    class="profile-menu-link"
+    >На головну</a
+  >
+  <a
+    routerLink="/array-one"
+    routerLinkActive="active"
+    ariaCurrentWhenActive="page"
+    class="profile-menu-link"
+    >Одновимірний масив</a
+  >
+  <a
+    routerLink="/array-two"
+    routerLinkActive="active"
+    ariaCurrentWhenActive="page"
+    class="profile-menu-link"
+    >Двовимірний масив</a
+  >
+</nav>
+<router-outlet></router-outlet>

@@ -1,0 +1,21 @@
+<h2>Двовимірний масив</h2>
+<h3>Завдання:</h3>
+<p class="p-zavd">
+  Дано цілочисельний масив B[1..5, 1..5].
+  Обчислити суму елементів, розташованих вище головної діагоналі.
+</p>
+<button class="btn-one-two" (click)="calculate()">Розрахунок</button>
+<h3>Двовимірний масив:</h3>
+<div class="table-container">
+  <table>
+    <tr *ngFor="let a of arrayTwo.a">
+      <td *ngFor="let aa of a">
+        {{ aa }}
+      </td>
+    </tr>
+  </table>
+</div>
+<h3>Результат:</h3>
+<p class="result">
+  Сума елементів вище головної діагоналі: {{ arrayTwo.sum }}
+</p>

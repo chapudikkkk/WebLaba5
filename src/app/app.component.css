@@ -4,3 +4,21 @@
   background: #f5f5fa;
   padding-bottom: 30px;
 }
+nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+nav a {
+  font-size: 24px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  margin: 0 10px;
+  padding: 22px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+nav a:hover {
+  background-color: #838fd3af;
+}

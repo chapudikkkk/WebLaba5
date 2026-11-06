@@ -1,0 +1,15 @@
+<h2>Одновимірний масив</h2>
+<h3>Завдання:</h3>
+<p class="p-zavd">
+  Температура води за 10 днів вересня.
+  Визначити кількість днів, придатних для купання (температура 20 °C і вище).
+</p>
+<button class="btn-one-two" (click)="calculate()">Розрахунок</button>
+<h3>Масив температур:</h3>
+<div class="array">
+  <div class="temperature" *ngFor="let a of arrayOne.a">
+    {{ a }} °C
+  </div>
+</div>
+<h3>Результат:</h3>
+<p class="result">Кількість днів, придатних для купання: {{ arrayOne.count }}</p>
